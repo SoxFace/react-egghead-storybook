@@ -3,6 +3,7 @@ import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from './Button';
 import Welcome from './Welcome';
 
+import Nineteen from './Nineteen';
 import Eighteen from './Eighteen';
 import Sixteen from './Sixteen';
 import Fifteen from './Fifteen';
@@ -81,4 +82,9 @@ storiesOf('Sixteen', module)
 storiesOf('Eighteen', module)
   .add('Iterating Children', () => (
     <Eighteen showApp={linkTo('Eighteen')}/>
+  ));
+
+storiesOf('Nineteen', module)
+  .add('React.cloneElement', () => (
+    <Nineteen showApp={linkTo('Nineteen')}/>
   ));
