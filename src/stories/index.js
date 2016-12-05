@@ -3,6 +3,7 @@ import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from './Button';
 import Welcome from './Welcome';
 
+import Sixteen from './Sixteen';
 import Fifteen from './Fifteen';
 import Thirteen from './Thirteen';
 import Fourteen from './Fourteen';
@@ -69,4 +70,9 @@ storiesOf('Fourteen', module)
 storiesOf('Fifteen', module)
   .add('Higher Order Components', () => (
     <Fifteen showApp={linkTo('Fifteen')}/>
+  ));
+
+storiesOf('Sixteen', module)
+  .add('jsX Compiler', () => (
+    <Sixteen showApp={linkTo('Sixteen')}/>
   ));
