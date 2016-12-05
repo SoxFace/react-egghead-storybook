@@ -2,9 +2,11 @@ import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from './Button';
 import Welcome from './Welcome';
-import Eleven from './Eleven';
+
+import Fifteen from './Fifteen';
 import Thirteen from './Thirteen';
 import Fourteen from './Fourteen';
+import Eleven from './Eleven';
 import Ten from './Ten';
 import Nine from './Nine';
 import Eight from './Eight';
@@ -62,4 +64,9 @@ storiesOf('Thirteen', module)
 storiesOf('Fourteen', module)
   .add('Star Wars API', () => (
     <Fourteen showApp={linkTo('Fourteen')}/>
+  ));
+
+storiesOf('Fifteen', module)
+  .add('Higher Order Components', () => (
+    <Fifteen showApp={linkTo('Fifteen')}/>
   ));
