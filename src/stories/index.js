@@ -3,6 +3,7 @@ import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from './Button';
 import Welcome from './Welcome';
 
+import Eighteen from './Eighteen';
 import Sixteen from './Sixteen';
 import Fifteen from './Fifteen';
 import Thirteen from './Thirteen';
@@ -75,4 +76,9 @@ storiesOf('Fifteen', module)
 storiesOf('Sixteen', module)
   .add('jsX Compiler', () => (
     <Sixteen showApp={linkTo('Sixteen')}/>
+  ));
+
+storiesOf('Eighteen', module)
+  .add('Iterating Children', () => (
+    <Eighteen showApp={linkTo('Eighteen')}/>
   ));
